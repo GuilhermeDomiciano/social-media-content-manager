@@ -1,1 +1,0 @@
-[text](https://docs.google.com/document/d/12hYnEUjSpX4TamBwCXzOlL5lpv1RIHDADchTReIjjXI/edit?usp=sharing)

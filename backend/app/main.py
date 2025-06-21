@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.api.v1.auth import router as auth_router
+from app.api.v1.users import router as users_router
 
 settings = get_settings()
 
@@ -27,6 +28,7 @@ def read_root():
 
 # Incluir o router de autenticação
 app.include_router(auth_router, prefix=settings.API_V1_STR) 
+app.include_router(users_router, prefix=settings.API_V1_STR)
 
 # Você adicionará os routers de API aqui posteriormente:
 # from app.api.v1.auth import router as auth_router

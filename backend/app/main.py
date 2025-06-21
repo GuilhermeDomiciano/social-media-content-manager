@@ -9,6 +9,9 @@ settings = get_settings()
 app = FastAPI(
     title=settings.PROJECT_NAME,
     openapi_url=f"{settings.API_V1_STR}/openapi.json",
+    # NOVAS LINHAS AQUI:
+    docs_url=f"{settings.API_V1_STR}/docs",    
+    redoc_url=f"{settings.API_V1_STR}/redoc",    
 )
 
 # Configuração do CORS Middleware

@@ -6,3 +6,7 @@ python-jose[cryptography]
 passlib[bcrypt]
 httpx
 pydantic-settings
+psycopg2
+pydantic
+pydantic[email]
+typing

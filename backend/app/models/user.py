@@ -6,6 +6,7 @@ from sqlmodel import Field, SQLModel # Importa Field e SQLModel
 
 # Define o modelo SQLModel para a tabela 'users'
 class User(SQLModel, table=True):
+    __tablename__ = "users"
     """
     Representa um usuário no banco de dados.
     """
